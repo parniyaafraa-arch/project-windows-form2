@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class seller
+	internal class Seller:BaseEntity
 	{
-		public int age { get; set; }
-		public string name { get; set; }
+		public int Age { get; set; }
+		public string Name { get; set; }
 		public string Lastname { get; set; }
-		public string workhistory { get; set; }
+		public string Workhistory { get; set; }
+		public string PhoneNumber {  get; set; }
+
+		public int sellerid { get; set; }
 	}
 }

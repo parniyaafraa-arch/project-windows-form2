@@ -6,14 +6,31 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class buyer
+	internal class Buyer:BaseEntity
 	{
-		public string firstname { get; set; }
-		public string lastname { get; set; }
-		public int phonenumber { get; set; }
-		public string email { get; set; }
-		public string address { get; set; }
+		
 
+
+
+
+		public Buyer(string email,string password)
+		{
+			if(string.IsNullOrEmpty(email)||string.IsNullOrEmpty(password))
+			{  throw new ArgumentNullException("email"); }	
+	
+			Email = email; 
+			Password= password;
+
+
+		}
+	
+		public string Firstname { get; set; }
+		public string Lastname { get; set; }
+		public string Phonenumber { get; set; }
+		public string Email { get; set; }
+		public string Address { get; set; }
+		public string ationalcode { get; set; }
+		public string Password { get; set; }
 
 	}
 }

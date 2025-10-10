@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class order
+	internal class order:BaseEntity
 	{
+		
 		public int Numberproduct { get; set; }
-		public string Address { get; set; }
-		public string ProductArrivalTime { get; set; }
+		public Buyer Address { get; set; }
+		public DateTime ProductArrivalTime { get; set; }
 
-		public string transportation { get; set; }
+		public string Transportation { get; set; }
 
 	}
 }

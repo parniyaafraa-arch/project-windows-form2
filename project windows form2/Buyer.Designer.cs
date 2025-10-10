@@ -35,10 +35,10 @@
 			button1 = new Button();
 			button2 = new Button();
 			linkLabel1 = new LinkLabel();
-			textBox1 = new TextBox();
-			textBox2 = new TextBox();
-			textBox3 = new TextBox();
-			textBox4 = new TextBox();
+			UserNameTextBox = new TextBox();
+			passwordTextBox = new TextBox();
+			phonenumberTextBox = new TextBox();
+			EmaliTextBox = new TextBox();
 			linkLabel2 = new LinkLabel();
 			SuspendLayout();
 			// 
@@ -65,9 +65,9 @@
 			label3.AutoSize = true;
 			label3.Location = new Point(3, 102);
 			label3.Name = "label3";
-			label3.Size = new Size(109, 20);
+			label3.Size = new Size(108, 20);
 			label3.TabIndex = 2;
-			label3.Text = "phone Number";
+			label3.Text = "Phone Number";
 			// 
 			// label4
 			// 
@@ -81,21 +81,22 @@
 			// button1
 			// 
 			button1.BackColor = Color.FromArgb(128, 255, 255);
-			button1.Location = new Point(116, 227);
+			button1.Location = new Point(153, 232);
 			button1.Name = "button1";
 			button1.Size = new Size(129, 36);
 			button1.TabIndex = 4;
 			button1.Text = "Login";
 			button1.UseVisualStyleBackColor = false;
+			button1.Click += button1_Click;
 			// 
 			// button2
 			// 
 			button2.BackColor = Color.FromArgb(255, 128, 128);
-			button2.Location = new Point(116, 279);
+			button2.Location = new Point(153, 283);
 			button2.Name = "button2";
 			button2.Size = new Size(129, 34);
 			button2.TabIndex = 5;
-			button2.Text = "Departure";
+			button2.Text = "Reset";
 			button2.UseVisualStyleBackColor = false;
 			// 
 			// linkLabel1
@@ -106,38 +107,41 @@
 			linkLabel1.Size = new Size(0, 20);
 			linkLabel1.TabIndex = 6;
 			// 
-			// textBox1
+			// UserNameTextBox
 			// 
-			textBox1.Location = new Point(118, 21);
-			textBox1.Name = "textBox1";
-			textBox1.Size = new Size(203, 27);
-			textBox1.TabIndex = 7;
+			UserNameTextBox.Location = new Point(118, 21);
+			UserNameTextBox.Name = "UserNameTextBox";
+			UserNameTextBox.Size = new Size(255, 27);
+			UserNameTextBox.TabIndex = 7;
+			UserNameTextBox.TextChanged += UserNameTextBox_TextChanged;
 			// 
-			// textBox2
+			// passwordTextBox
 			// 
-			textBox2.Location = new Point(117, 61);
-			textBox2.Name = "textBox2";
-			textBox2.Size = new Size(203, 27);
-			textBox2.TabIndex = 8;
+			passwordTextBox.Location = new Point(118, 61);
+			passwordTextBox.Name = "passwordTextBox";
+			passwordTextBox.Size = new Size(255, 27);
+			passwordTextBox.TabIndex = 8;
+			passwordTextBox.TextChanged += passwordTextBox_TextChanged;
 			// 
-			// textBox3
+			// phonenumberTextBox
 			// 
-			textBox3.Location = new Point(118, 99);
-			textBox3.Name = "textBox3";
-			textBox3.Size = new Size(202, 27);
-			textBox3.TabIndex = 9;
+			phonenumberTextBox.Location = new Point(118, 99);
+			phonenumberTextBox.Name = "phonenumberTextBox";
+			phonenumberTextBox.Size = new Size(255, 27);
+			phonenumberTextBox.TabIndex = 9;
 			// 
-			// textBox4
+			// EmaliTextBox
 			// 
-			textBox4.Location = new Point(118, 139);
-			textBox4.Name = "textBox4";
-			textBox4.Size = new Size(203, 27);
-			textBox4.TabIndex = 10;
+			EmaliTextBox.Location = new Point(118, 142);
+			EmaliTextBox.Name = "EmaliTextBox";
+			EmaliTextBox.Size = new Size(255, 27);
+			EmaliTextBox.TabIndex = 10;
+			EmaliTextBox.TextChanged += EmaliTextBox_TextChanged;
 			// 
 			// linkLabel2
 			// 
 			linkLabel2.AutoSize = true;
-			linkLabel2.Location = new Point(153, 183);
+			linkLabel2.Location = new Point(191, 181);
 			linkLabel2.Name = "linkLabel2";
 			linkLabel2.Size = new Size(103, 20);
 			linkLabel2.TabIndex = 11;
@@ -148,12 +152,12 @@
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(373, 378);
+			ClientSize = new Size(412, 343);
 			Controls.Add(linkLabel2);
-			Controls.Add(textBox4);
-			Controls.Add(textBox3);
-			Controls.Add(textBox2);
-			Controls.Add(textBox1);
+			Controls.Add(EmaliTextBox);
+			Controls.Add(phonenumberTextBox);
+			Controls.Add(passwordTextBox);
+			Controls.Add(UserNameTextBox);
 			Controls.Add(linkLabel1);
 			Controls.Add(button2);
 			Controls.Add(button1);
@@ -177,10 +181,10 @@
 		private Button button1;
 		private Button button2;
 		private LinkLabel linkLabel1;
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private TextBox textBox3;
-		private TextBox textBox4;
+		private TextBox UserNameTextBox;
+		private TextBox passwordTextBox;
+		private TextBox phonenumberTextBox;
+		private TextBox EmaliTextBox;
 		private LinkLabel linkLabel2;
 	}
 }
