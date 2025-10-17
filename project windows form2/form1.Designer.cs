@@ -147,6 +147,7 @@
 			linkLabel2.TabIndex = 11;
 			linkLabel2.TabStop = true;
 			linkLabel2.Text = "Create Acount";
+			linkLabel2.LinkClicked += linkLabel2_LinkClicked;
 			// 
 			// Form1
 			// 

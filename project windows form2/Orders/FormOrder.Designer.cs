@@ -28,17 +28,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			textBox1 = new TextBox();
+			NameTextBox = new TextBox();
 			label1 = new Label();
 			label2 = new Label();
-			comboBox1 = new ComboBox();
+			productcomboBox = new ComboBox();
 			label3 = new Label();
-			numericUpDown1 = new NumericUpDown();
+			QuantitynumericUpDown = new NumericUpDown();
 			label4 = new Label();
 			label5 = new Label();
 			label6 = new Label();
 			label7 = new Label();
-			textBox2 = new TextBox();
+			UnitPricetextBox = new TextBox();
 			label8 = new Label();
 			button1 = new Button();
 			dataGridView1 = new DataGridView();
@@ -46,16 +46,17 @@
 			Product = new DataGridViewTextBoxColumn();
 			Quantity = new DataGridViewTextBoxColumn();
 			Total = new DataGridViewTextBoxColumn();
-			((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+			((System.ComponentModel.ISupportInitialize)QuantitynumericUpDown).BeginInit();
 			((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
 			SuspendLayout();
 			// 
-			// textBox1
+			// NameTextBox
 			// 
-			textBox1.Location = new Point(176, 63);
-			textBox1.Name = "textBox1";
-			textBox1.Size = new Size(231, 27);
-			textBox1.TabIndex = 0;
+			NameTextBox.Location = new Point(176, 63);
+			NameTextBox.Name = "NameTextBox";
+			NameTextBox.Size = new Size(231, 27);
+			NameTextBox.TabIndex = 0;
+			NameTextBox.TextChanged += NameTextBox_TextChanged;
 			// 
 			// label1
 			// 
@@ -75,14 +76,14 @@
 			label2.TabIndex = 2;
 			label2.Text = "Product";
 			// 
-			// comboBox1
+			// productcomboBox
 			// 
-			comboBox1.FormattingEnabled = true;
-			comboBox1.Location = new Point(176, 121);
-			comboBox1.Name = "comboBox1";
-			comboBox1.Size = new Size(231, 28);
-			comboBox1.TabIndex = 3;
-			comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+			productcomboBox.FormattingEnabled = true;
+			productcomboBox.Location = new Point(176, 121);
+			productcomboBox.Name = "productcomboBox";
+			productcomboBox.Size = new Size(231, 28);
+			productcomboBox.TabIndex = 3;
+			productcomboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
 			// 
 			// label3
 			// 
@@ -93,12 +94,12 @@
 			label3.TabIndex = 4;
 			label3.Text = "Quantity";
 			// 
-			// numericUpDown1
+			// QuantitynumericUpDown
 			// 
-			numericUpDown1.Location = new Point(176, 175);
-			numericUpDown1.Name = "numericUpDown1";
-			numericUpDown1.Size = new Size(231, 27);
-			numericUpDown1.TabIndex = 5;
+			QuantitynumericUpDown.Location = new Point(176, 175);
+			QuantitynumericUpDown.Name = "QuantitynumericUpDown";
+			QuantitynumericUpDown.Size = new Size(231, 27);
+			QuantitynumericUpDown.TabIndex = 5;
 			// 
 			// label4
 			// 
@@ -133,12 +134,12 @@
 			label7.Size = new Size(0, 20);
 			label7.TabIndex = 9;
 			// 
-			// textBox2
+			// UnitPricetextBox
 			// 
-			textBox2.Location = new Point(176, 221);
-			textBox2.Name = "textBox2";
-			textBox2.Size = new Size(231, 27);
-			textBox2.TabIndex = 10;
+			UnitPricetextBox.Location = new Point(176, 221);
+			UnitPricetextBox.Name = "UnitPricetextBox";
+			UnitPricetextBox.Size = new Size(231, 27);
+			UnitPricetextBox.TabIndex = 10;
 			// 
 			// label8
 			// 
@@ -157,6 +158,7 @@
 			button1.TabIndex = 12;
 			button1.Text = "Submit Order";
 			button1.UseVisualStyleBackColor = false;
+			button1.Click += button1_Click;
 			// 
 			// dataGridView1
 			// 
@@ -205,21 +207,21 @@
 			Controls.Add(dataGridView1);
 			Controls.Add(button1);
 			Controls.Add(label8);
-			Controls.Add(textBox2);
+			Controls.Add(UnitPricetextBox);
 			Controls.Add(label7);
 			Controls.Add(label6);
 			Controls.Add(label5);
 			Controls.Add(label4);
-			Controls.Add(numericUpDown1);
+			Controls.Add(QuantitynumericUpDown);
 			Controls.Add(label3);
-			Controls.Add(comboBox1);
+			Controls.Add(productcomboBox);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Controls.Add(textBox1);
-			Name = "Form_Order";
+			Controls.Add(NameTextBox);
+			//Name = "Form_Order";
 			Text = "Form_Order";
 			Load += Form_Order_Load;
-			((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+			((System.ComponentModel.ISupportInitialize)QuantitynumericUpDown).EndInit();
 			((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
@@ -227,17 +229,17 @@
 
 		#endregion
 
-		private TextBox textBox1;
+		private TextBox NameTextBox;
 		private Label label1;
 		private Label label2;
-		private ComboBox comboBox1;
+		private ComboBox productcomboBox;
 		private Label label3;
-		private NumericUpDown numericUpDown1;
+		private NumericUpDown QuantitynumericUpDown;
 		private Label label4;
 		private Label label5;
 		private Label label6;
 		private Label label7;
-		private TextBox textBox2;
+		private TextBox UnitPricetextBox;
 		private Label label8;
 		private Button button1;
 		private DataGridView dataGridView1;

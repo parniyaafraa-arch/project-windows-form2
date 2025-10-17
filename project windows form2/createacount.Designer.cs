@@ -32,10 +32,10 @@
 			label2 = new Label();
 			label3 = new Label();
 			label4 = new Label();
-			textBox1 = new TextBox();
-			textBox2 = new TextBox();
-			textBox3 = new TextBox();
-			textBox4 = new TextBox();
+			UserNameTextBox = new TextBox();
+			phonenumberTextBox = new TextBox();
+			confirmpasswordTextBox = new TextBox();
+			EmaliTextBox = new TextBox();
 			button1 = new Button();
 			button2 = new Button();
 			SuspendLayout();
@@ -54,9 +54,9 @@
 			label2.AutoSize = true;
 			label2.Location = new Point(28, 71);
 			label2.Name = "label2";
-			label2.Size = new Size(70, 20);
+			label2.Size = new Size(104, 20);
 			label2.TabIndex = 1;
-			label2.Text = "Password";
+			label2.Text = "PhoneNumber";
 			// 
 			// label3
 			// 
@@ -76,33 +76,35 @@
 			label4.TabIndex = 3;
 			label4.Text = "Emali";
 			// 
-			// textBox1
+			// UserNameTextBox
 			// 
-			textBox1.Location = new Point(136, 24);
-			textBox1.Name = "textBox1";
-			textBox1.Size = new Size(174, 27);
-			textBox1.TabIndex = 4;
+			UserNameTextBox.Location = new Point(136, 24);
+			UserNameTextBox.Name = "UserNameTextBox";
+			UserNameTextBox.Size = new Size(174, 27);
+			UserNameTextBox.TabIndex = 4;
 			// 
-			// textBox2
+			// phonenumberTextBox
 			// 
-			textBox2.Location = new Point(136, 71);
-			textBox2.Name = "textBox2";
-			textBox2.Size = new Size(174, 27);
-			textBox2.TabIndex = 5;
+			phonenumberTextBox.Location = new Point(136, 71);
+			phonenumberTextBox.Name = "phonenumberTextBox";
+			phonenumberTextBox.Size = new Size(174, 27);
+			phonenumberTextBox.TabIndex = 5;
+			phonenumberTextBox.TextChanged += phonenumberTextBox_TextChanged;
 			// 
-			// textBox3
+			// confirmpasswordTextBox
 			// 
-			textBox3.Location = new Point(136, 110);
-			textBox3.Name = "textBox3";
-			textBox3.Size = new Size(174, 27);
-			textBox3.TabIndex = 6;
+			confirmpasswordTextBox.Location = new Point(136, 110);
+			confirmpasswordTextBox.Name = "confirmpasswordTextBox";
+			confirmpasswordTextBox.Size = new Size(174, 27);
+			confirmpasswordTextBox.TabIndex = 6;
 			// 
-			// textBox4
+			// EmaliTextBox
 			// 
-			textBox4.Location = new Point(136, 150);
-			textBox4.Name = "textBox4";
-			textBox4.Size = new Size(174, 27);
-			textBox4.TabIndex = 7;
+			EmaliTextBox.Location = new Point(136, 150);
+			EmaliTextBox.Name = "EmaliTextBox";
+			EmaliTextBox.Size = new Size(174, 27);
+			EmaliTextBox.TabIndex = 7;
+			EmaliTextBox.TextChanged += EmaliTextBox_TextChanged;
 			// 
 			// button1
 			// 
@@ -113,6 +115,7 @@
 			button1.TabIndex = 8;
 			button1.Text = "Rigester";
 			button1.UseVisualStyleBackColor = false;
+			button1.Click += button1_Click;
 			// 
 			// button2
 			// 
@@ -131,10 +134,10 @@
 			ClientSize = new Size(334, 345);
 			Controls.Add(button2);
 			Controls.Add(button1);
-			Controls.Add(textBox4);
-			Controls.Add(textBox3);
-			Controls.Add(textBox2);
-			Controls.Add(textBox1);
+			Controls.Add(EmaliTextBox);
+			Controls.Add(confirmpasswordTextBox);
+			Controls.Add(phonenumberTextBox);
+			Controls.Add(UserNameTextBox);
 			Controls.Add(label4);
 			Controls.Add(label3);
 			Controls.Add(label2);
@@ -151,10 +154,10 @@
 		private Label label2;
 		private Label label3;
 		private Label label4;
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private TextBox textBox3;
-		private TextBox textBox4;
+		private TextBox UserNameTextBox;
+		private TextBox phonenumberTextBox;
+		private TextBox confirmpasswordTextBox;
+		private TextBox EmaliTextBox;
 		private Button button1;
 		private Button button2;
 	}

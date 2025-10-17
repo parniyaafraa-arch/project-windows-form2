@@ -8,8 +8,8 @@ namespace project_windows_form2.classes
 {
 	internal class Watchlist
 	{
-		public buyer id {  get; set; }
+		public Buyer id {  get; set; }
 
-		public product product { get; set; }
+		public Product product { get; set; }
 	}
 }

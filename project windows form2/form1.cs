@@ -21,8 +21,8 @@ namespace project_windows_form2
 			string PhoneNumber = phonenumberTextBox.Text;
 			string Email = EmaliTextBox.Text;
 
-			Buyer buyer = new Buyer(email:Email,password:Password);
-			buyer.Firstname = UserName;
+			Buyer buyer = new Buyer(email: Email, password: Password);
+			buyer.UserName = UserName;
 			buyer.Password = Password;
 			buyer.Phonenumber = PhoneNumber;
 			buyer.Email = Email;
@@ -43,6 +43,16 @@ namespace project_windows_form2
 
 		private void EmaliTextBox_TextChanged(object sender, EventArgs e)
 		{
+
+		}
+
+		private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			create_acount create_Acount = new create_acount();
+			create_Acount.Show();
+
+
+
 
 		}
 	}

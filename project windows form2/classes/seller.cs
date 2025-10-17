@@ -8,6 +8,7 @@ namespace project_windows_form2.classes
 {
 	internal class Seller:BaseEntity
 	{
+		
 		public int Age { get; set; }
 		public string Name { get; set; }
 		public string Lastname { get; set; }
