@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class order:BaseEntity
+	public  class order:BaseEntity
 	{
-		
+		public order():base() { }
+		public List<OrderItem> OrderItems { get; set; }
+		public List<Product> Products { get; set; }
 		public int Numberproduct { get; set; }
 		public Buyer Address { get; set; }
 		public DateTime ProductArrivalTime { get; set; }

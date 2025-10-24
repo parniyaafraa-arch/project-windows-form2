@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using project_windows_form2.enums;
 namespace project_windows_form2.classes
 {
-	internal class Product:BaseEntity
+	public class Product:BaseEntity
 	{
-	
+		public Product():base()
+		{ }
 		public string Name { get; set; }
 		public int Numberproduct { get; set; }
 		public string Storageconditions { get; set; }

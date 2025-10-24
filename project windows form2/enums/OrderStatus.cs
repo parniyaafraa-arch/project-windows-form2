@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.enums
 {
-	enum OrderStatus
+	public enum OrderStatus
 	{
 		None = 0,
 		Approved= 1,

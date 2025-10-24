@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class Seller:BaseEntity
+	public class Seller:BaseEntity
 	{
-		
+		public Seller():base() { }
 		public int Age { get; set; }
 		public string Name { get; set; }
 		public string Lastname { get; set; }

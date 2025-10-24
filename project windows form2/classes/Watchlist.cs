@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class Watchlist
+	public class Watchlist
 	{
 		public Buyer id {  get; set; }
 

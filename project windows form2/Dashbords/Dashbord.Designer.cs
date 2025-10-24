@@ -34,6 +34,7 @@
 			ordersToolStripMenuItem = new ToolStripMenuItem();
 			basketToolStripMenuItem = new ToolStripMenuItem();
 			sellerToolStripMenuItem = new ToolStripMenuItem();
+			menuStrip1 = new MenuStrip();
 			contextMenuStrip1.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -42,19 +43,19 @@
 			contextMenuStrip1.ImageScalingSize = new Size(20, 20);
 			contextMenuStrip1.Items.AddRange(new ToolStripItem[] { acToolStripMenuItem, ordersToolStripMenuItem });
 			contextMenuStrip1.Name = "contextMenuStrip1";
-			contextMenuStrip1.Size = new Size(211, 80);
+			contextMenuStrip1.Size = new Size(126, 52);
 			// 
 			// acToolStripMenuItem
 			// 
 			acToolStripMenuItem.Name = "acToolStripMenuItem";
-			acToolStripMenuItem.Size = new Size(210, 24);
+			acToolStripMenuItem.Size = new Size(125, 24);
 			acToolStripMenuItem.Text = "Acount";
 			// 
 			// ordersToolStripMenuItem
 			// 
 			ordersToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { basketToolStripMenuItem, sellerToolStripMenuItem });
 			ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
-			ordersToolStripMenuItem.Size = new Size(210, 24);
+			ordersToolStripMenuItem.Size = new Size(125, 24);
 			ordersToolStripMenuItem.Text = "Orders";
 			// 
 			// basketToolStripMenuItem
@@ -71,16 +72,28 @@
 			sellerToolStripMenuItem.Text = "Seller";
 			sellerToolStripMenuItem.Click += sellerToolStripMenuItem_Click;
 			// 
+			// menuStrip1
+			// 
+			menuStrip1.ImageScalingSize = new Size(20, 20);
+			menuStrip1.Location = new Point(0, 0);
+			menuStrip1.Name = "menuStrip1";
+			menuStrip1.Size = new Size(800, 24);
+			menuStrip1.TabIndex = 1;
+			menuStrip1.Text = "menuStrip1";
+			// 
 			// Dashbord
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
+			Controls.Add(menuStrip1);
+			MainMenuStrip = menuStrip1;
 			Name = "Dashbord";
 			Text = "Form1";
 			Load += Form1_Load;
 			contextMenuStrip1.ResumeLayout(false);
 			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion
@@ -90,5 +103,6 @@
 		private ToolStripMenuItem ordersToolStripMenuItem;
 		private ToolStripMenuItem basketToolStripMenuItem;
 		private ToolStripMenuItem sellerToolStripMenuItem;
+		private MenuStrip menuStrip1;
 	}
 }

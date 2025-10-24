@@ -1,12 +1,16 @@
 using project_windows_form2.classes;
+using project_windows_form2.Services;
 
 namespace project_windows_form2
 {
-	public partial class Form1 : Form
+	public partial class BuyerForm : Form
 	{
-		public Form1()
+		UserService userService;
+
+		public BuyerForm()
 		{
 			InitializeComponent();
+			userService=new UserService();
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -26,7 +30,7 @@ namespace project_windows_form2
 			buyer.Password = Password;
 			buyer.Phonenumber = PhoneNumber;
 			buyer.Email = Email;
-
+			userService.Add(buyer);
 
 
 		}

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace project_windows_form2.classes
 {
-	internal class Buyer:BaseEntity
+	public class Buyer:BaseEntity
 	{
+		public Buyer():base()
+		{
 		
-
-
-
-
+		
+		}
 		public Buyer(string email,string password)
 		{
 			if(string.IsNullOrEmpty(email)||string.IsNullOrEmpty(password))

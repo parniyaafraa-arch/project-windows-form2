@@ -1,6 +1,6 @@
 ﻿namespace project_windows_form2
 {
-    partial class Form1
+    partial class BuyerForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -40,6 +40,8 @@
 			phonenumberTextBox = new TextBox();
 			EmaliTextBox = new TextBox();
 			linkLabel2 = new LinkLabel();
+			button3 = new Button();
+			button4 = new Button();
 			SuspendLayout();
 			// 
 			// label1
@@ -81,7 +83,7 @@
 			// button1
 			// 
 			button1.BackColor = Color.FromArgb(128, 255, 255);
-			button1.Location = new Point(153, 232);
+			button1.Location = new Point(53, 241);
 			button1.Name = "button1";
 			button1.Size = new Size(129, 36);
 			button1.TabIndex = 4;
@@ -92,7 +94,7 @@
 			// button2
 			// 
 			button2.BackColor = Color.FromArgb(255, 128, 128);
-			button2.Location = new Point(153, 283);
+			button2.Location = new Point(53, 297);
 			button2.Name = "button2";
 			button2.Size = new Size(129, 34);
 			button2.TabIndex = 5;
@@ -149,11 +151,31 @@
 			linkLabel2.Text = "Create Acount";
 			linkLabel2.LinkClicked += linkLabel2_LinkClicked;
 			// 
-			// Form1
+			// button3
+			// 
+			button3.Location = new Point(235, 241);
+			button3.Name = "button3";
+			button3.Size = new Size(124, 36);
+			button3.TabIndex = 12;
+			button3.Text = "Delete";
+			button3.UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			button4.Location = new Point(235, 297);
+			button4.Name = "button4";
+			button4.Size = new Size(129, 34);
+			button4.TabIndex = 13;
+			button4.Text = "Apdate";
+			button4.UseVisualStyleBackColor = true;
+			// 
+			// BuyerForm
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(412, 343);
+			Controls.Add(button4);
+			Controls.Add(button3);
 			Controls.Add(linkLabel2);
 			Controls.Add(EmaliTextBox);
 			Controls.Add(phonenumberTextBox);
@@ -166,7 +188,7 @@
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Name = "Form1";
+			Name = "BuyerForm";
 			Text = "Form1";
 			Load += Form1_Load;
 			ResumeLayout(false);
@@ -187,5 +209,7 @@
 		private TextBox phonenumberTextBox;
 		private TextBox EmaliTextBox;
 		private LinkLabel linkLabel2;
+		private Button button3;
+		private Button button4;
 	}
 }

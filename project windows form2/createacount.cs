@@ -26,9 +26,9 @@ namespace project_windows_form2
 			string PhoneNumber = phonenumberTextBox.Text;
 			string ConfirmPassword = confirmpasswordTextBox.Text;
 			string Email = EmaliTextBox.Text;
-			Buyer buyer = new Buyer(email: EmaliTextBox.Text, password: phonenumberTextBox.Text);
+			classes.Buyer buyer = new classes.Buyer(email: EmaliTextBox.Text, password: phonenumberTextBox.Text);
 
-			List<Buyer> buyers = new List<Buyer>();
+			List<classes.Buyer> buyers = new List<classes.Buyer>();
 			buyers.Add(buyer);
 			PhoneNumberHelper.IsValidPhoneNumber(PhoneNumber);
 
