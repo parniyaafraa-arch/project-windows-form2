@@ -82,6 +82,7 @@
 			UserNameTextBox.Name = "UserNameTextBox";
 			UserNameTextBox.Size = new Size(174, 27);
 			UserNameTextBox.TabIndex = 4;
+			UserNameTextBox.TextChanged += UserNameTextBox_TextChanged;
 			// 
 			// phonenumberTextBox
 			// 

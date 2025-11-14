@@ -1,12 +1,11 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using project_windows_form2.classes;
+using BaseBackend.classes;
 
-namespace project_windows_form2.Services
+namespace BaseBackend.Services
 {
 	public class UserService
 	{

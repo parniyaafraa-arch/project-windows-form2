@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project windows form2", "pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genertic", "Genertic\Genertic.csproj", "{1183475A-DF06-47F2-86C7-FC1A103B1419}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHanding", "FileHanding\FileHanding.csproj", "{6393E6EA-050A-407C-93A6-429F18E608A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseBackend", "BaseBackend\BaseBackend.csproj", "{40D5E061-0D7A-4C87-8B7C-D72E30B68F75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1183475A-DF06-47F2-86C7-FC1A103B1419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1183475A-DF06-47F2-86C7-FC1A103B1419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1183475A-DF06-47F2-86C7-FC1A103B1419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6393E6EA-050A-407C-93A6-429F18E608A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6393E6EA-050A-407C-93A6-429F18E608A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6393E6EA-050A-407C-93A6-429F18E608A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6393E6EA-050A-407C-93A6-429F18E608A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D5E061-0D7A-4C87-8B7C-D72E30B68F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D5E061-0D7A-4C87-8B7C-D72E30B68F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D5E061-0D7A-4C87-8B7C-D72E30B68F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D5E061-0D7A-4C87-8B7C-D72E30B68F75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

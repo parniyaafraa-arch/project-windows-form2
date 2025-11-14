@@ -1,4 +1,4 @@
-﻿using project_windows_form2.classes;
+﻿using BaseBackend.classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,12 +34,6 @@ namespace project_windows_form2.Orders
 
 		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-
-
-
-
-
-
 
 
 		}

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace project_windows_form2.enums
+namespace BaseBackend.enums;
+
+public enum OrderStatus
 {
-	public enum OrderStatus
-	{
-		None = 0,
-		Approved= 1,
-		Delivered = 2,
-		Denied = 3,
+	None = 0,
+	Approved= 1,
+	Delivered = 2,
+	Denied = 3,
 
 
 
@@ -19,5 +19,4 @@ namespace project_windows_form2.enums
 
 
 
-	}
 }

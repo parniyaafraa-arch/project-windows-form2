@@ -1,4 +1,4 @@
-﻿using project_windows_form2.classes;
+﻿using BaseBackend.classes;
 using project_windows_form2.Helps;
 using System;
 using System.Collections.Generic;
@@ -26,9 +26,9 @@ namespace project_windows_form2
 			string PhoneNumber = phonenumberTextBox.Text;
 			string ConfirmPassword = confirmpasswordTextBox.Text;
 			string Email = EmaliTextBox.Text;
-			classes.Buyer buyer = new classes.Buyer(email: EmaliTextBox.Text, password: phonenumberTextBox.Text);
+			Buyer buyer = new Buyer(email: EmaliTextBox.Text, password: phonenumberTextBox.Text);
 
-			List<classes.Buyer> buyers = new List<classes.Buyer>();
+			List<Buyer> buyers = new List<Buyer>();
 			buyers.Add(buyer);
 			PhoneNumberHelper.IsValidPhoneNumber(PhoneNumber);
 
@@ -43,6 +43,11 @@ namespace project_windows_form2
 		}
 
 		private void EmaliTextBox_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void UserNameTextBox_TextChanged(object sender, EventArgs e)
 		{
 
 		}

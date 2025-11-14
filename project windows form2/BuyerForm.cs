@@ -1,5 +1,7 @@
-using project_windows_form2.classes;
-using project_windows_form2.Services;
+using Newtonsoft.Json;
+using BaseBackend.classes;
+using BaseBackend.Services;
+using project_windows_form2.Dashbords;
 
 namespace project_windows_form2
 {
@@ -32,6 +34,28 @@ namespace project_windows_form2
 			buyer.Email = Email;
 			userService.Add(buyer);
 
+			string pathBuyerList = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "Buyer.json");
+			if (!File.Exists(pathBuyerList))
+
+			{
+				MessageBox.Show("Innalid File Path");
+				return;
+			}
+
+
+
+
+			string BuyerConvertList=File.ReadAllText(pathBuyerList);
+			List<BuyerList> buyerLists = JsonConvert.DeserializeObject<List<BuyerList>>(BuyerConvertList);
+			var LoginBuver = buyerLists.Where(buyer => buyer.UserName == UserName && buyer.Password == Password);
+		if(LoginBuver is not null)
+				{
+
+					Dashbord dashbord = new Dashbord();
+					dashbord.ShowDialog();
+					return;
+
+				}
 
 		}
 

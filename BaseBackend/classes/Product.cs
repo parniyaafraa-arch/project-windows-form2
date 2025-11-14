@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using BaseBackend.enums;
+namespace BaseBackend.classes;
+
+public class Product:BaseEntity
+{
+	// composition wich Seller
+	public Product():base()
+	{ }
+	public string Name { get; set; }
+	public int Numberproduct { get; set; }
+	public string Storageconditions { get; set; }
+	public OrderStatus Status { get; set; }
+	public Seller sellerid { get; set; }
+}

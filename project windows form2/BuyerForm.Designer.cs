@@ -153,21 +153,23 @@
 			// 
 			// button3
 			// 
+			button3.BackColor = Color.FromArgb(128, 255, 255);
 			button3.Location = new Point(235, 241);
 			button3.Name = "button3";
 			button3.Size = new Size(124, 36);
 			button3.TabIndex = 12;
 			button3.Text = "Delete";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			// 
 			// button4
 			// 
+			button4.BackColor = Color.FromArgb(255, 128, 128);
 			button4.Location = new Point(235, 297);
 			button4.Name = "button4";
 			button4.Size = new Size(129, 34);
 			button4.TabIndex = 13;
 			button4.Text = "Apdate";
-			button4.UseVisualStyleBackColor = true;
+			button4.UseVisualStyleBackColor = false;
 			// 
 			// BuyerForm
 			// 
